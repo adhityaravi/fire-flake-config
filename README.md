@@ -5,8 +5,6 @@
 
 This repository provides a **starter template** for creating your own personal configuration repository for use with [fire-flake](https://github.com/adhityaravi/fire-flake).
 
-> ✨ **Note**: This project is in an **early design phase**. Features, structure, and best practices may continue to evolve in a breaking way.
-
 ---
 
 ## Purpose
@@ -69,32 +67,3 @@ Example snippet in your `fire-flake` repo:
 ```nix
 inputs.fire-flake-config.url = "github:<your-username>/<your-private-fire-flake-config>";
 ```
-
-## Best Practices
-
-- **Keep `secrets/` private.** It's strongly recommended to not commit sensitive data unless encrypted.
-- **Use a .gitignore** (already provided) to prevent accidental leaks.
-- **Use structured Nix files** under `vars/` for easier compatibility and readability.
-- **Maintain strict folder structure alignment** with the `fire-flake` repo.
-- **Version and document your changes** to your configuration to keep track over time.
-
-## Future Plans
-
-- Support optional encryption for secrets (e.g., via [sops-nix](https://github.com/Mic92/sops-nix)).
-- Introduce schema validation for vars and secrets.
-- Expand metadata capabilities.
-- Provide additional examples and guides as fire-flake matures.
-
-## License
-
-This template repository itself is **unlicensed**, intended for personal and private use.
-(You are free to modify it as needed for your own configuration.)
-
----
-
-# ✨ Happy hacking with fire-flake! 🔥❄️
-
----
-
-_If you have feedback or suggestions, feel free to contribute or open issues once the project enters a more stable phase!_
-
